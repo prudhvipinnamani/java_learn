@@ -1,0 +1,28 @@
+/*FizBuzz is a game in which we have to count numbers in different way and when the numbers
+  that are multiples of 3,5 or both occur we have to say "Fizz","Buzz","FizBuzz" respectively
+  when numbers other than this occurs response should be silent(Null).
+ */
+
+public class FizBuzz {
+    
+	public int gamelimit=35;
+
+	public void startGame() {
+		
+		Kushvanth kushobj=new Kushvanth(gamelimit);
+		Prudhvi prudhviobj=new Prudhvi(gamelimit);
+		for(int i=1;i<=gamelimit;i++) {
+			if(i%2==0)
+				System.out.println(kushobj.response(i));
+			else
+				System.out.println(prudhviobj.response(i));
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+    FizBuzz referer=new FizBuzz();
+		referer.startGame();
+  }
+}
