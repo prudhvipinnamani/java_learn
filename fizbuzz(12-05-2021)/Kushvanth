@@ -1,0 +1,19 @@
+public class Kushvanth {
+	private int gamelimit;
+
+	public Kushvanth(int gamelimit) {
+		
+		this.gamelimit=gamelimit;
+	}
+
+	public String response(int number) {
+		if(number%5==0 & number%3==0 & number<=gamelimit)
+			return "FizzBuzz";
+		else if(number%5==0 & number<=gamelimit)
+			return "Buzz";
+		else if(number%3==0 & number<=gamelimit)
+			return "Fizz";
+		return "null";
+	}
+}
+
