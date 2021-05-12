@@ -1,0 +1,15 @@
+public class Prudhvi {
+	
+	private int gamelimit;
+
+	public Prudhvi(int gamelimit) {
+		this.gamelimit=gamelimit;
+		
+	}
+
+	public String response(int number) {
+		
+		String answer =number%3==0 & number%5==0 & number<=gamelimit?"FizBuzz":(number%5==0 & number<=gamelimit?"Buzz":(number%3==0 & number<=gamelimit?"Fizz":"Null"));
+		return answer;
+	}
+}
